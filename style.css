@@ -1,9 +1,11 @@
+/* reset defaults */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   
 }
+/* prepare the body */
 body {
   height: 100%;
   width: 100%;
@@ -13,24 +15,48 @@ body {
   min-height: 100vh;
   
 }
+/* prepare the board */
 .game-board {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   display: grid;
   place-items: center;
   grid-template-columns: 3fr 1fr 3fr;
   grid-template-rows: 3fr 1fr 3fr;
 }
-.cell {
-  background-color: red;
-  width: 40px;
-  height: 40px;
-  border: solid black 1px;
+/* set properties for each cell */
+ .cell {
+  width: 100px;
+  height: 100px;
+  border-left: solid black 10px;
+  border-bottom: solid black 10px;
+  font-size: 80px;
+  font-weight: 500;
+  text-align: center;
+  
 }
+/* remove unneccary borders */
+#item1, #item4, #item7 {
+  border-left: 0;
+  
+}
+#item7, #item8 , #item9{
+  border-bottom: 0;
+}
+
 
 
 h1 {
   position: absolute;
   top: 20px;
 
+}
+.title{
+  position: absolute;
+  top: 80px;
+  font-size: 20px;
+}
+span {
+  margin: 10px;
+  font-size: 20px;
 }

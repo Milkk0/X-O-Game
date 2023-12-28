@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>X-O Game</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -12,17 +12,18 @@
     <h1>
        X | O Game
     </h1>
+    <div class="title"><span></span>To Play</div>
     
-    <div class="game-board">
-        <div class="cell top-left-corner">top-left</div>
-        <div class="cell top-mid">top-mid</div>
-        <div class="cell top-right-corner">top-right</div>
-        <div class="cell mid-left">mid-left</div>
-        <div class="cell mid">mid</div>
-        <div class="cell mid-right">mid-right</div>
-        <div class="cell buttom-left">buttom-left</div>
-        <div class="cell bottom-mid">buttom-mid</div>
-        <div class="cell bottom-right-corner">buttom-right</div>
+    <div class="game-board" onclick="play(this.id)">
+        <div class="cell" id="item1" onclick="play(this.id)"></div>
+        <div class="cell" id="item2" onclick="play(this.id)"></div>
+        <div class="cell" id="item3" onclick="play(this.id)"></div>
+        <div class="cell" id="item4" onclick="play(this.id)"></div>
+        <div class="cell" id="item5" onclick="play(this.id)"></div>
+        <div class="cell" id="item6" onclick="play(this.id)"></div>
+        <div class="cell" id="item7" onclick="play(this.id)"></div>
+        <div class="cell" id="item8" onclick="play(this.id)"></div>
+        <div class="cell" id="item9" onclick="play(this.id)"></div>
     </div>
     
 
